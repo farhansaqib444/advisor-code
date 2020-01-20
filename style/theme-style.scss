@@ -9,7 +9,26 @@ html {
   position: relative;
   min-height: 100%;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #52f1e0;
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3FAAFB;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #331A70;
+}
 body {
   padding-bottom: 60px;
   overflow-x: hidden;
