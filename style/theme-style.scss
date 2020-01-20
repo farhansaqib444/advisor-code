@@ -1,4 +1,8 @@
+/*
+https://xd.adobe.com/view/a97b0f9f-8d51-4731-6dc1-da6158202da6-df4a/
+*/
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 html {
   position: relative;
   min-height: 100%;
@@ -7,6 +11,8 @@ html {
 body {
   padding-bottom: 60px;
   overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+
 }
 
 .metismenu {
@@ -24,15 +30,10 @@ body {
     }
   }
 }
-.material-icons {
-  vertical-align: middle;
-}
-.eyeBrow-rounded {
-  border-radius: 10px;
-}
+
 .nav-second-level li a, .nav-thrid-level li a {
   padding: 8px 20px;
-  color: #6e768e;
+  color: #fff;
   display: block;
   position: relative;
   -webkit-transition: all .4s;
@@ -42,18 +43,18 @@ body {
 
 .nav-second-level li a {
   &:focus, &:hover {
-    color: #6658dd;
+    color: #3FAAFB;
   }
 }
 
 .nav-thrid-level li a {
   &:focus, &:hover {
-    color: #6658dd;
+    color: #3FAAFB;
   }
 }
 
 .nav-second-level li.active > a, .nav-third-level li.active > a {
-  color: #6658dd;
+  color: #3FAAFB;
 }
 
 #wrapper {
@@ -72,21 +73,21 @@ body {
 
 .left-side-menu {
   width: 240px;
-  background: #fff;
   bottom: 0;
-  padding: 20px 0;
+  background: #331A70 0% 0% no-repeat padding-box;
   position: fixed;
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
-  top: 70px;
-  -webkit-box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.16), 0 2px 6px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.16), 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+  top: 0px;
+  -webkit-box-shadow: 0px 10px 30px #00000026;
+  box-shadow: 0px 10px 30px #00000026;
+  z-index: 9;
 }
 
 #sidebar-menu {
   > ul > li > {
     a {
-      color: #6e768e;
+      color: #fff;
       display: block;
       padding: 13px 20px;
       position: relative;
@@ -111,6 +112,7 @@ body {
         text-align: center;
         vertical-align: middle;
         width: 20px;
+        font-size: 20px;
       }
 
       .drop-arrow {
@@ -158,6 +160,9 @@ body {
 
   .badge {
     margin-top: 4px;
+    border-radius: 15px;
+    background: #fff;
+    color: #3E1678;
   }
 
   li.active > a > span.menu-arrow {
@@ -189,7 +194,15 @@ body {
 
     &.logo-sm {
       display: block;
+      p {
+        font-size: 24px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0;
+        line-height: 26px;
+      }
     }
+
   }
 
   .left-side-menu {
@@ -197,6 +210,10 @@ body {
     padding-top: 0;
     width: 70px !important;
     z-index: 5;
+
+    .nav-second-level li a, .nav-thrid-level li a {
+      color: #6658dd;
+    }
 
     .slimScrollDiv, .slimscroll-menu {
       overflow: inherit !important;
@@ -489,7 +506,9 @@ body.enlarged {
   width: 90%;
   margin-left: 5%;
   margin-top: 10px;
+  .dropdown-item{
 
+  }
   .dropdown-item {
     border-radius: 3px;
 
@@ -502,7 +521,6 @@ body.enlarged {
 
 .logo {
   display: block;
-  line-height: 70px;
 
   span {
     &.logo-lg {
@@ -530,21 +548,20 @@ body.enlarged {
 }
 
 .logo-box {
-  height: 70px;
   width: 240px;
-  float: left;
+  margin: 15px 0;
+  padding: 10px 0;
 }
 
 .navbar-custom {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 30px #25265E26;
-  opacity: 1;
   padding: 0 10px 0 0;
   position: fixed;
   left: 0;
   right: 0;
   height: 70px;
-  z-index: 100;
+  z-index: 1;
 
   .topnav-menu {
     > li {
@@ -552,19 +569,15 @@ body.enlarged {
     }
 
     .nav-link {
+      font-family: 'Lato', sans-serif;
       padding: 0 15px;
-      color: #1C84F8;
+      color: #637280;
+      font-size: 16px;
       min-width: 32px;
       display: block;
       line-height: 70px;
       text-align: center;
       max-height: 70px;
-      .pro-user-name {
-        font: Regular 16px/19px Lato;
-        letter-spacing: 0.11px;
-        color: #637280;
-        opacity: 0.75;
-      }
     }
   }
 
@@ -616,23 +629,21 @@ body.enlarged {
     }
   }
 
-  .button-menu-mobile {
-    border: none;
-    color: #fff;
-    display: inline-block;
-    height: 70px;
-    line-height: 70px;
-    width: 60px;
-    background-color: transparent;
-    font-size: 24px;
-    cursor: pointer;
 
-    &.disable-btn {
-      display: none;
-    }
+}
+.button-menu-mobile {
+  border: none;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+
+  &.disable-btn {
+    display: none;
   }
 }
-
 .noti-scroll {
   max-height: 230px;
 }
@@ -648,6 +659,7 @@ body.enlarged {
   .noti-icon {
     font-size: 21px;
     vertical-align: middle;
+    color: #1C84F8;
   }
 
   .noti-icon-badge {
@@ -813,19 +825,22 @@ body.enlarged {
   padding: 19px 15px 20px;
   position: absolute;
   right: 0;
-  color: #98a6ad;
+  color: #1C84F8;
   left: 240px;
-  background-color: #f7f8f9;
-  border-top: 1px solid #e8e8e8;
+  background: #fff 0% 0% no-repeat padding-box;
 
-  .footer-links a {
-    color: #98a6ad;
+
+  .footer-links a, .copy-right {
+    color: #1C84F8;
     margin-left: 1.5rem;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     -webkit-transition: all .4s;
     transition: all .4s;
 
     &:hover {
-      color: #323a46;
+      color: #331A70;
     }
 
     &:first-of-type {
@@ -1086,7 +1101,15 @@ body.boxed-layout {
   border-radius: 50%;
   color: #adb5bd;
 }
-
+.social-links {
+  a {
+    margin: 0px 15px;
+    padding: 2px;
+    i {
+      color: #1C84F8;
+    }
+  }
+}
 .widget-flat {
   position: relative;
   overflow: hidden;
@@ -5438,11 +5461,7 @@ table[data-toggle=table] {
     display: block;
   }
 }
-.dropdown-toggle.nav-user {
-  &:after {
-    display: none;
-  }
-}
+
 .bootstrap-select {
   &:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
     width: 100% !important;
@@ -5450,12 +5469,9 @@ table[data-toggle=table] {
 
   .dropdown-toggle {
     &:before {
-      content: "";
+      content: "\F140";
       display: inline-block;
       font-family: "Material Design Icons";
-    }
-    &:after {
-      display: none;
     }
 
     &:focus {
