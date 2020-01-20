@@ -1,5 +1,7 @@
 /*
 https://xd.adobe.com/view/a97b0f9f-8d51-4731-6dc1-da6158202da6-df4a/
+
+                            ------------Structure styling file-----------------
 */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
@@ -178,7 +180,8 @@ body {
       color: #6658dd;
       background-color: #f7f8f9;
       -webkit-transition: none;
-      transition: none; }
+      transition: none;
+      box-shadow: 0px 3px 10px 2px rgba(154, 161, 171, 0.5); }
       .enlarged .left-side-menu #sidebar-menu > ul > li:hover > a span {
         display: inline; }
     .enlarged .left-side-menu #sidebar-menu > ul > li:hover a.active :after, .enlarged .left-side-menu #sidebar-menu > ul > li:hover a.open :after {
@@ -189,8 +192,8 @@ body {
       position: absolute;
       width: 190px;
       height: auto !important;
-      -webkit-box-shadow: 3px 5px 10px 0 rgba(154, 161, 171, 0.2);
-      box-shadow: 3px 5px 10px 0 rgba(154, 161, 171, 0.2); }
+      -webkit-box-shadow: 5px 10px 7px 1px rgba(154, 161, 171, 0.5);
+      box-shadow: 5px 10px 7px 1px rgba(154, 161, 171, 0.5); }
       .enlarged .left-side-menu #sidebar-menu > ul > li:hover > ul ul {
         -webkit-box-shadow: 3px 5px 10px 0 rgba(154, 161, 171, 0.2);
         box-shadow: 3px 5px 10px 0 rgba(154, 161, 171, 0.2); }
