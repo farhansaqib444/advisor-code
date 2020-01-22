@@ -29,7 +29,8 @@ html {
 body {
   padding-bottom: 60px;
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  background-color: #FAFBFC; }
 
 .metismenu {
   padding: 0; }
@@ -557,7 +558,7 @@ body.enlarged {
   right: 0;
   color: #1C84F8;
   left: 240px;
-  background: #FAFBFC  0% 0% no-repeat padding-box; }
+  background: #FAFBFC   0% 0% no-repeat padding-box; }
   .footer .footer-links a, .footer .copy-right {
     color: #1C84F8;
     margin-left: 1.5rem;
@@ -3932,6 +3933,17 @@ table[data-toggle=table] {
     flex: 1 1;
     border-bottom: 3px solid #D1DBE2;
     margin: auto; }
+  .section-title.mini {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #D1DBE2; }
+    .section-title.mini:before, .section-title.mini:after {
+      content: "";
+      flex: 1 1;
+      border-bottom: 3px solid #D1DBE2;
+      margin: auto; }
 
 .bg-gray {
   background: #ECEEF0 0 0 no-repeat padding-box; }

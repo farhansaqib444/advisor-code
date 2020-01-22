@@ -33,6 +33,7 @@ body {
   padding-bottom: 60px;
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
+  background-color: #FAFBFC;
 }
 .metismenu {
   padding: 0;
@@ -5765,6 +5766,7 @@ table[data-toggle=table] {
   letter-spacing: 0;
   margin-bottom: 30px;
 
+
   span {
     display: inline-block;
     padding: 0 15px;
@@ -5775,6 +5777,20 @@ table[data-toggle=table] {
     flex: 1 1;
     border-bottom: 3px solid #D1DBE2;
     margin: auto;
+  }
+  &.mini {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #D1DBE2;
+    &:before,
+    &:after {
+      content: "";
+      flex: 1 1;
+      border-bottom: 3px solid #D1DBE2;
+      margin: auto;
+    }
   }
 }
 .bg-gray {
