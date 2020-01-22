@@ -1,0 +1,17 @@
+.btn-primary {
+  background-color: #331A70; }
+  .btn-primary:hover {
+    background-color: #0d071d;
+    transition: all 0.2s ease-in; }
+  .btn-primary:active {
+    background-color: #201047; }
+
+.btn-secondary {
+  background-color: #1C84F8; }
+  .btn-secondary:hover {
+    background-color: #0553a9;
+    transition: all 0.2s ease-in; }
+  .btn-secondary:active {
+    background-color: #076bda; }
+
+/*# sourceMappingURL=mixin.css.map */

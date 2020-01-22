@@ -68,7 +68,8 @@ body {
   overflow: hidden;
   padding: 0 15px 5px 15px;
   min-height: 80vh;
-  margin-top: 70px; }
+  margin-top: 70px;
+  background-color: #FAFBFC; }
 
 .left-side-menu {
   width: 240px;
@@ -556,7 +557,7 @@ body.enlarged {
   right: 0;
   color: #1C84F8;
   left: 240px;
-  background: #fff 0% 0% no-repeat padding-box; }
+  background: #FAFBFC  0% 0% no-repeat padding-box; }
   .footer .footer-links a, .footer .copy-right {
     color: #1C84F8;
     margin-left: 1.5rem;
@@ -3908,5 +3909,219 @@ table[data-toggle=table] {
   line-height: 24px; }
 .mapael .plotLegend text {
   font-family: Roboto, sans-serif !important; }
+
+.eq-height {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch; }
+
+.section-title {
+  display: flex;
+  flex-direction: row;
+  color: #331A70;
+  font-size: 29px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0;
+  margin-bottom: 30px; }
+  .section-title span {
+    display: inline-block;
+    padding: 0 15px; }
+  .section-title:before, .section-title:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid #D1DBE2;
+    margin: auto; }
+
+.bg-gray {
+  background: #ECEEF0 0 0 no-repeat padding-box; }
+
+.bg-purple {
+  background: #FBE3FF 0 0 no-repeat padding-box; }
+
+.outer-card {
+  border-radius: 5px;
+  padding: 28px 30px; }
+
+.title-info {
+  display: inline-block;
+  margin-left: 0;
+  vertical-align: top;
+  margin-top: -12px; }
+  .title-info i {
+    font-size: 13px;
+    color: #1C84F8; }
+
+.secret-card {
+  background: #FFFFFF 0 0 no-repeat padding-box;
+  box-shadow: 0 10px 30px #00000026;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 25px;
+  width: 100%; }
+  .secret-card .secret-card-title {
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+    color: #000000; }
+  .secret-card .card-counter {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 0 15px; }
+    .secret-card .card-counter label {
+      font-size: 12px;
+      font-weight: 400;
+      font-family: Roboto, sans-serif;
+      letter-spacing: 0.08px;
+      color: #637280;
+      margin-bottom: 0;
+      line-height: 19px; }
+    .secret-card .card-counter .current-value {
+      font-size: 26px;
+      font-weight: 700;
+      font-family: Roboto, sans-serif;
+      letter-spacing: 0.18px;
+      color: #5C34BE;
+      margin-bottom: 0;
+      line-height: 25px; }
+      .secret-card .card-counter .current-value.raise:after {
+        content: url("../images/raise.png"); }
+      .secret-card .card-counter .current-value.reduce:after {
+        content: url("../images/reduce.png"); }
+    .secret-card .card-counter .data-percentage {
+      font-size: 10px;
+      font-weight: 400;
+      font-family: Roboto, sans-serif;
+      margin-bottom: 0;
+      letter-spacing: 0.07px;
+      color: #FF0000; }
+    .secret-card .card-counter .comparison {
+      font-size: 10px;
+      font-weight: 400;
+      font-family: Roboto, sans-serif;
+      letter-spacing: 0.07px;
+      color: #AFAFB0; }
+
+.order-card {
+  box-shadow: 0px 10px 20px;
+  margin-bottom: 20px;
+  display: flex; }
+  .order-card .user-area {
+    background: #B57DED 0% 0% no-repeat padding-box;
+    padding: 14px 15px;
+    max-width: 227px; }
+    .order-card .user-area .username {
+      font-family: Roboto, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0;
+      color: #FFFFFF;
+      margin-bottom: 5px; }
+    .order-card .user-area .info-list {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .order-card .user-area .info-list li {
+        font-family: Roboto, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: #FFFFFF; }
+  .order-card .order-description {
+    padding: 14px 15px;
+    background-color: #fff;
+    width: 100%; }
+    .order-card .order-description time {
+      font-family: Roboto, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0;
+      color: #DBDBDB;
+      margin-bottom: 7px; }
+    .order-card .order-description h3 {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0;
+      color: #545871;
+      margin-bottom: 7px; }
+    .order-card .order-description p {
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0;
+      color: #545871; }
+
+.visit-all {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0;
+  color: #4DA1FF; }
+
+.status-box {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px; }
+  .status-box.green {
+    background-color: #57CC4E; }
+
+.table-box {
+  background-color: #fff;
+  border-radius: 5px;
+  padding-top: 20px; }
+  .table-box .nav-pills .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #5C34BE;
+    padding: 0;
+    margin: 0 15px; }
+  .table-box .nav-pills .nav-link.active, .table-box .nav-pills .show > .nav-link {
+    color: #5C34BE;
+    background-color: transparent;
+    border-bottom: 2px solid #5C34BE;
+    padding: 0px;
+    margin: 0 15px;
+    border-radius: 0; }
+  .table-box .table thead tr th {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #C1C1C1;
+    vertical-align: bottom;
+    border-bottom: 1px solid #dee2e6;
+    padding: 13px 5px; }
+    .table-box .table thead tr th:first-child {
+      padding-left: 15px; }
+    .table-box .table thead tr th:last-child {
+      padding-right: 15px; }
+  .table-box .table tbody tr td {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #3D3D3D;
+    padding: 14px 5px; }
+    .table-box .table tbody tr td:first-child {
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0;
+      color: #3D3D3D;
+      padding-left: 15px; }
+    .table-box .table tbody tr td:last-child {
+      padding-right: 15px; }
+
+@media only screen and (max-width: 767px) {
+  .order-card {
+    flex-direction: column; }
+    .order-card .user-area {
+      max-width: 100%; } }
 
 /*# sourceMappingURL=theme-style.css.map */
