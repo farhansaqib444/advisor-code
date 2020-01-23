@@ -5768,8 +5768,6 @@ table[data-toggle=table] {
   font-family: Roboto, sans-serif;
   letter-spacing: 0;
   margin-bottom: 30px;
-
-
   span {
     display: inline-block;
     padding: 0 15px;
@@ -5792,6 +5790,21 @@ table[data-toggle=table] {
       content: "";
       flex: 1 1;
       border-bottom: 3px solid #D1DBE2;
+      margin: auto;
+    }
+  }
+  &.client-divider {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #7B7B7B;
+    margin-bottom: 5px;
+    &:before,
+    &:after {
+      content: "";
+      flex: 1 1;
+      border-bottom: 1px solid #D1DBE2;
       margin: auto;
     }
   }
@@ -5985,6 +5998,50 @@ table[data-toggle=table] {
   color: #5C34BE;
   i {
     color: #6D35C1;
+  }
+}
+.client-card {
+  padding-bottom: 15px;
+  label {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #AFB1BB;
+    margin: 0;
+  }
+  h2 {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #5C34BE;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #5C34BE;
+  }
+  .client-content {
+    a {
+      cursor: pointer;
+      text-align: center;
+      i {
+        vertical-align: middle;
+        font-size: 70px;
+        display: block;
+        line-height: 48px;
+      }
+      label {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 0;
+        color: #5C34BE;
+      }
+    }
   }
 }
 .table-box {

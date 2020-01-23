@@ -3947,6 +3947,18 @@ table[data-toggle=table] {
       flex: 1 1;
       border-bottom: 3px solid #D1DBE2;
       margin: auto; }
+  .section-title.client-divider {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #7B7B7B;
+    margin-bottom: 5px; }
+    .section-title.client-divider:before, .section-title.client-divider:after {
+      content: "";
+      flex: 1 1;
+      border-bottom: 1px solid #D1DBE2;
+      margin: auto; }
 
 .bg-gray {
   background: #ECEEF0 0 0 no-repeat padding-box; }
@@ -4113,6 +4125,42 @@ table[data-toggle=table] {
   color: #5C34BE; }
   .sort-btn i {
     color: #6D35C1; }
+
+.client-card {
+  padding-bottom: 15px; }
+  .client-card label {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #AFB1BB;
+    margin: 0; }
+  .client-card h2 {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #5C34BE; }
+  .client-card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #5C34BE; }
+  .client-card .client-content a {
+    cursor: pointer;
+    text-align: center; }
+    .client-card .client-content a i {
+      vertical-align: middle;
+      font-size: 70px;
+      display: block;
+      line-height: 48px; }
+    .client-card .client-content a label {
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0;
+      color: #5C34BE; }
 
 .table-box {
   background-color: #fff;
