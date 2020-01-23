@@ -5756,6 +5756,9 @@ table[data-toggle=table] {
   flex-wrap: wrap;
   align-content: stretch;
 }
+.hv-80 {
+  height: 80vh;
+}
 .section-title {
   display: flex;
   flex-direction: row;
@@ -5947,6 +5950,31 @@ table[data-toggle=table] {
   border-radius: 5px;
   &.green {
     background-color: #57CC4E;
+  }
+}
+.promotion-page {
+  text-align: center;
+  img {
+    max-width: 300px;
+    width: 100%;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #D1DBE2;
+  }
+  a {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #5C34BE;
+    text-shadow: 0px 10px 30px #00000026;
+    i {
+      color: #5C34BE;
+    }
   }
 }
 .table-box {
