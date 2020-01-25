@@ -9,6 +9,15 @@ html {
   position: relative;
   min-height: 100%; }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0; }
+
 ::-webkit-scrollbar {
   width: 10px; }
 
@@ -3966,6 +3975,9 @@ table[data-toggle=table] {
 .bg-purple {
   background: #FBE3FF 0 0 no-repeat padding-box; }
 
+.bg-sky {
+  background-color: #2C99ED; }
+
 .outer-card {
   border-radius: 5px;
   padding: 28px 30px; }
@@ -4162,6 +4174,35 @@ table[data-toggle=table] {
       letter-spacing: 0;
       color: #5C34BE; }
 
+.order-overview .left-content {
+  width: calc(100% - 392px); }
+.order-overview h2 {
+  font-size: 34px;
+  font-family: Roboto;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #545871;
+  margin-bottom: 10px; }
+.order-overview .paragraph {
+  margin-bottom: 45px; }
+.order-overview .right-content {
+  max-width: 390px;
+  width: 100%;
+  min-height: 320px;
+  height: 100%;
+  padding: 30px 30px; }
+  .order-overview .right-content .username {
+    color: #fff; }
+  .order-overview .right-content .info-list li {
+    font-size: 12px; }
+
+.video-content {
+  margin-bottom: 25px; }
+  .video-content iframe {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
+
 .table-box {
   background-color: #fff;
   border-radius: 5px;
@@ -4232,6 +4273,14 @@ table[data-toggle=table] {
     .table-box .table tbody tr td:last-child {
       padding-right: 15px; }
 
+@media only screen and (max-width: 768px) {
+  .order-overview .right-content {
+    max-width: 100%; }
+  .order-overview .left-content {
+    width: 100%; }
+
+  .video-content {
+    text-align: center; } }
 @media only screen and (max-width: 767px) {
   .order-card {
     flex-direction: column; }
