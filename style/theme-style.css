@@ -41,6 +41,18 @@ body {
   font-family: 'Lato', sans-serif;
   background-color: #FAFBFC; }
 
+.custom-right-bar {
+  position: absolute;
+  right: -18px;
+  top: -13px;
+  border-radius: 5px;
+  background: #331A70 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 30px #25265E26;
+  padding: 10px 15px;
+  cursor: pointer; }
+  .custom-right-bar i {
+    color: #fff; }
+
 .metismenu {
   padding: 0; }
   .metismenu li {

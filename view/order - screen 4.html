@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/bootstrap.min.css">
     <link rel="stylesheet" href="../style/icons.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 
     <link href="../style/mixin.css" rel="stylesheet" type="text/css" />
     <link href="../style/theme-style.css" rel="stylesheet" type="text/css" />
@@ -137,8 +139,20 @@
     <div class="content-page">
         <div class="content">
             <!-- Start Content-->
-            <div class="order-overview mt-4">
+            <div class="order-overview mt-4 ">
                 <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="section-title mini fancy"><span>Orders</span></h2>
+                    </div>
+                    <div class="col-12" style="height: 40px">
+                      <a  class="custom-right-bar nav-link right-bar-toggle  waves-light">
+                        <i class="material-icons align-middle">
+                          chat
+                        </i>
+                      </a>
+                    </div>
+                  </div>
                     <div class="secret-card p-0 d-flex flex-wrap flex-lg-nowrap">
                         <div class="left-content p-3 ">
                             <h2>
@@ -213,6 +227,54 @@
         </footer>
         <!-- end Footer -->
     </div>
+
+  <div class="right-bar">
+    <div class="rightbar-title">
+      <a href="javascript:void(0);" class="right-bar-toggle float-right">
+        <i class="dripicons-cross noti-icon"></i>
+      </a>
+    </div>
+    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 466px;"><div class="slimscroll-menu" style="overflow: hidden; width: auto; height: 466px;">
+      <div class="client-card d-flex flex-column h-100 justify-content-around">
+        <div class="d-flex justify-content-center client-content pt-3">
+          <a href="">
+            <i class="material-icons mb-2">
+              delete_sweep
+            </i>
+            <label>Delete</label>
+          </a>
+        </div>
+        <div class="d-flex justify-content-center client-content pt-3">
+          <a href="">
+            <i class="material-icons mb-2">
+              mail
+            </i>
+            <label>Voice Message</label>
+          </a>
+        </div>
+        <div class="d-flex justify-content-center client-content pt-3">
+          <a href="">
+            <i class="material-icons mb-2">
+              contact_mail
+            </i>
+            <label>Live Chat</label>
+          </a>
+        </div>
+        <div class="d-flex justify-content-center client-content pt-3">
+          <a href="">
+            <i class="material-icons mb-2">
+              contact_mail
+            </i>
+            <label>Video Call</label>
+          </a>
+        </div>
+      </div>
+
+
+
+    </div><div class="slimScrollBar" style="background: rgb(158, 165, 171); width: 8px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 253.984px;"></div><div class="slimScrollRail" style="width: 8px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div> <!-- end slimscroll-menu-->
+  </div>
+
     <!-- ============================================================== -->
     <!-- End Page content -->
     <!-- ============================================================== -->
