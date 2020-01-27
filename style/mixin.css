@@ -7,11 +7,11 @@
     background-color: #201047; }
 
 .btn-secondary {
-  background-color: #1C84F8; }
+  background-color: #5C34BE; }
   .btn-secondary:hover {
-    background-color: #0553a9;
+    background-color: #351e6e;
     transition: all 0.2s ease-in; }
   .btn-secondary:active {
-    background-color: #076bda; }
+    background-color: #492996; }
 
 /*# sourceMappingURL=mixin.css.map */

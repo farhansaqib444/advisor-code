@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Order 2 - Screen 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- App favicon -->
+
+  <!-- App css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style/bootstrap.min.css">
+  <link rel="stylesheet" href="../style/icons.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+  <link href="../style/mixin.css" rel="stylesheet" type="text/css" />
+  <link href="../style/theme-style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<!-- Begin page -->
+<div id="wrapper">
+  <!-- Topbar Start -->
+  <div class="navbar-custom">
+    <ul class="list-unstyled topnav-menu float-right mb-0">
+      <li class="dropdown notification-list">
+        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+          <img src="../images/user-1.jpg" alt="user-image" class="rounded-circle">
+          <span class="pro-user-name ml-1">
+                Turkish Gypsy Girl <i class="mdi mdi-chevron-down"></i>
+            </span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+          <!-- item-->
+
+          <!-- item-->
+          <a href="#" class="dropdown-item notify-item">
+            <i class="fe-user"></i>
+            <span>My Account</span>
+          </a>
+
+
+          <!-- item-->
+          <a href="#" class="dropdown-item notify-item">
+            <i class="fe-lock"></i>
+            <span>Lock Screen</span>
+          </a>
+
+          <div class="dropdown-divider"></div>
+
+          <!-- item-->
+          <a href="#" class="dropdown-item notify-item">
+            <i class="fe-log-out"></i>
+            <span>Logout</span>
+          </a>
+
+        </div>
+      </li>
+      <li class="dropdown notification-list">
+        <a href="#" class="nav-link right-bar-toggle waves-effect waves-light">
+          <i class="fe-power noti-icon"></i>
+        </a>
+      </li>
+    </ul>
+    <!-- LOGO -->
+    <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+      <li>
+        <button style="padding: 17px 20px;" class="button-menu-mobile waves-effect waves-light">
+          <i class="fe-menu" style="color: #1C84F8"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <!-- end Topbar -->
+  <!-- ========== Left Sidebar Start ========== -->
+  <div class="left-side-menu">
+    <div class="slimscroll-menu">
+
+      <!--- Sidemenu -->
+      <div id="sidebar-menu" class="d-flex align-content-between flex-wrap h-100">
+        <ul class="metismenu" id="side-menu">
+          <li>
+            <div class="logo-box">
+              <a href="#" class="logo text-center">
+                  <span class="logo-lg">
+                      <img src="../images/TSP-logo@2x.png" alt="" >
+                  </span>
+                <span class="logo-sm">
+                      <p>TSY</p>
+                    </span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-portrait"></i>
+
+              <span> Overview  <span class="badge badge-success ml-2">4</span></span>
+            </a>
+            <ul class="nav-second-level" aria-expanded="false">
+              <li>
+                <a href="#">Overview 1</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-calendar-day"></i>
+              <span> Orders </span>
+              <span class="menu-arrow"></span>
+            </a>
+            <ul class="nav-second-level" aria-expanded="false">
+              <li>
+                <a href="#">Orders 1</a>
+              </li>
+              <li>
+                <a href="#">Orders 2</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="metismenu text-center w-100">
+          <li>
+            <button class="button-menu-mobile waves-effect waves-light">
+              <i class="fe-menu"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+    </div>
+    <!-- Sidebar -left -->
+  </div>
+  <!-- Left Sidebar End -->
+  <!-- ============================================================== -->
+  <!-- Start Page Content here -->
+  <!-- ============================================================== -->
+  <div class="content-page">
+    <div class="content">
+      <!-- Start Content-->
+      <div class="dashboard mt-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <h2 class="section-title mini fancy"><span>Account Setup</span></h2>
+            </div>
+          </div>
+          <div class="vertical-pill-card">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-md-0">
+                <div class="nav flex-column nav-pills vertical-pill" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Profile</a>
+                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Orders</a>
+                  <a class="nav-link active" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Payments</a>
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-8 col-sm-12">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane" id="v-pills-home" role="tabpanel">
+                    <div class="account-setup-header d-flex justify-content-between align-items-center flex-wrap mb-4">
+                      <div class="media mb-3 mb-lg-0">
+                        <img class=" mr-3" src="../images/user-1.jpg" alt="Generic placeholder image">
+                        <div class="media-body align-self-center mb-2">
+                          <h5 class="mt-0 mb-0">Turkish Gypsy Girl</h5>
+                          <p class="mb-0">
+                            Love Specialist
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="btn btn-secondary px-4">Save</button>
+                      </div>
+                    </div>
+                    <div class="account-setup-body">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                          <form>
+                            <div class="form-group mb-2">
+                              <label for="aa">Screen Name *</label>
+                              <input type="text" id="aa" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group mb-2">
+                              <label for="bb">Email</label>
+                              <input type="email" id="bb" name="example-email" class="form-control" placeholder="turkishgypsy@gmail.com">
+                            </div>
+                            <div class="form-group mb-2">
+                              <label for="cc">Service Name *</label>
+                              <input type="text" id="cc" class="form-control" placeholder="Mel Over">
+                            </div>
+                            <div class="form-group mb-2">
+                              <label for="example-textarea">Text area</label>
+                              <textarea class="form-control" id="example-textarea" rows="7"></textarea>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <form>
+                            <div class="form-group mb-2">
+                              <label for="">Availability *</label>
+                              <div class="d-flex justify-content-between flex-wrap">
+                                <div class="checkbox checkbox-primary mb-2">
+                                  <input id="video-bx" type="checkbox" checked="">
+                                  <label for="video-bx">
+                                    Video Message
+                                  </label>
+                                </div>
+                                <div class="checkbox checkbox-primary mb-2">
+                                  <input id="live-bx" type="checkbox">
+                                  <label for="live-bx">
+                                    Live Chat
+                                  </label>
+                                </div>
+                                <div class="checkbox checkbox-primary mb-2">
+                                  <input id="video-chat" type="checkbox">
+                                  <label for="video-chat">
+                                    Video Chat
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group mb-2">
+                              <label for="">Change Photo</label>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <span>Photo Name</span>
+                                <span>
+                                  <i class="material-icons align-middle">
+                                    camera_enhance
+                                  </i>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="form-group mb-2">
+                              <label for="ll">Contact Number *</label>
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">CC</div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="436 484 7894">
+                              </div>
+                            </div>
+                            <div class="form-group mb-2">
+                              <label for="">Services *</label>
+                              <div class="row mb-3">
+                                <div class="col-xl-6 col-lg-12 col-md-12">
+                                  <div class="checkbox checkbox-primary mb-2">
+                                    <input id="1" type="checkbox" checked="">
+                                    <label for="1">
+                                      TAROT READINGS
+                                    </label>
+                                  </div></div>
+                                <div class="col-xl-6 col-lg-12 col-md-12">
+                                  <div class="checkbox checkbox-primary mb-2">
+                                    <input id="2" type="checkbox">
+                                    <label for="2">
+                                      PSYCHIC READINGS
+                                    </label>
+                                  </div></div>
+                              </div>
+                              <div class="row mb-3">
+                                <div class="col-xl-6 col-lg-12 col-md-12" style="white-space: nowrap;">
+                                  <div class="checkbox checkbox-primary mb-2">
+                                    <input id="3" type="checkbox" checked="">
+                                    <label for="3">
+                                      RELATIONSHIP COACHING
+                                    </label>
+                                  </div></div>
+                                <div class="col-xl-6 col-lg-12 col-md-12">
+                                  <div class="checkbox checkbox-primary mb-2">
+                                    <input id="4" type="checkbox">
+                                    <label for="4">
+                                      PALM READINGS
+                                    </label>
+                                  </div></div>
+                              </div>
+                              <div class="row mb-3">
+                                <div class="col-xl-6 col-lg-12 col-md-12" style="white-space: nowrap;">
+                                  <div class="checkbox checkbox-primary mb-2">
+                                    <input id="5" type="checkbox" checked="">
+                                    <label for="5">
+                                      ASTROLOGY & HOROSCOPES
+                                    </label>
+                                  </div></div>
+                                <div class="col-xl-6 col-lg-12 col-md-12">
+                                  <div class="checkbox checkbox-primary mb-2">
+                                    <input id="6" type="checkbox">
+                                    <label for="6">
+                                      ORACLE GUIDANCE
+                                    </label>
+                                  </div></div>
+                              </div>
+                              <div class="row mb-3">
+                                <div class="col-xl-6 col-lg-12 col-md-12">
+                                  <div class="checkbox checkbox-primary mb-2">
+                                    <input id="7" type="checkbox" checked="">
+                                    <label for="7">
+                                      ANGEL INSIGHTS
+                                    </label>
+                                  </div></div>
+                                <div class="col-xl-6 col-lg-12 col-md-12">
+                                  <div class="checkbox checkbox-primary mb-2">
+                                    <input id="8" type="checkbox">
+                                    <label for="8">
+                                      DREAM ANALYSIS
+                                    </label>
+                                  </div></div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel">
+                    <div class="account-setup-header d-flex justify-content-between align-items-center flex-wrap mb-4">
+                      <div class="media mb-3 mb-lg-0">
+                        <img class=" mr-3" src="../images/user-1.jpg" alt="Generic placeholder image">
+                        <div class="media-body align-self-center mb-2">
+                          <h5 class="mt-0 mb-0">Turkish Gypsy Girl</h5>
+                          <p class="mb-0">
+                            Love Specialist
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="btn btn-secondary px-4">Save</button>
+                      </div>
+                    </div>
+                    <div class="account-setup-body">
+                      <div class="row mb-3">
+                        <div class="col-lg-12 col-md-12">
+                          <div class="form-group mb-2">
+                            <label for="Instructions">Special Instructions for Order</label>
+                            <textarea class="form-control" id="Instructions" rows="7"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                          <div class="form-group mb-2">
+                            <label>Profile Video</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <div class="form-group mb-2">
+                            <label for="">Pictures Section</label>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Photo Name</span>
+                              <span>
+                                  <i class="material-icons align-middle">
+                                    camera_enhance
+                                  </i>
+                                </span>
+                            </div>
+                          </div>
+                          <div class="form-group mb-2">
+                            <label for="embed">Video Section</label>
+                            <input type="text" id="embed" class="form-control" placeholder="Link">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show active" id="v-pills-messages" role="tabpanel">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-12">
+                        <form>
+                          <div class="form-group mb-2">
+                            <label for="Legal">Legal Name of Individual *</label>
+                            <input type="text" id="Legal" class="form-control" placeholder="Text Field">
+                          </div>
+                          <div class="form-group mb-2">
+                            <label for="b-date">Date of Birth *</label>
+                            <input type="date" id="b-date" name="example-email" class="form-control" placeholder="Calendar Field">
+                          </div>
+                          <div class="form-group mb-2">
+                            <label for="country">Country *</label>
+                            <input type="text" id="country" class="form-control" placeholder="Country">
+                          </div>
+                          <div class="form-group mb-2">
+                            <label for="bank">Bank Details *</label>
+                            <input type="text" id="bank" class="form-control" placeholder="** 0234 232 6411">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-lg-6 col-md-12">
+                        <form>
+                          <div class="mb-2 text-right">
+                            <button class="btn btn-secondary px-4">Save</button>
+                          </div>
+                          <div class="form-group mb-2">
+                            <label for="">Availability *</label>
+                            <div class="d-flex justify-content-start flex-wrap">
+                              <div class="checkbox checkbox-primary mb-2">
+                                <input id="term-condition" type="checkbox" checked="">
+                                <label for="term-condition">
+                                  I agree to the terms of service
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group mb-2">
+                            <label for="Rate">Live Rate (for Call) *</label>
+                            <input type="text" id="Rate" class="form-control" placeholder="Numeric Field">
+                          </div>
+                          <div class="form-group mb-2">
+                            <label for="Permanent-address">Permanent Address *</label>
+                            <input type="text" id="Permanent-address" class="form-control" placeholder="Address">
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-6 col-12">
+                              <div class="form-group mb-2">
+                                <label for="zip-code">ZIP Code *</label>
+                                <input type="text" id="zip-code" class="form-control" placeholder="Zip">
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                              <div class="form-group mb-2">
+                                <label for="city">City</label>
+                                <input type="text" id="city" class="form-control" placeholder="City">
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group mb-2">
+                          <label for="terms">Terms of Service</label>
+                          <textarea class="form-control" id="terms" rows="7"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- container -->
+    </div> <!-- content -->
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-start">
+            <div class="social-links mr-4">
+              <a href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+            <div class=" footer-links d-none d-sm-block">
+              <a href="#">CONTACT</a>
+              <a href="#">TERMS OF USE</a>
+              <a href="#">PRIVACY POLICY</a>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-right">
+            <p class="mb-0 copy-right">© 2018 The Sectret Psychic. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end Footer -->
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Page content -->
+  <!-- ============================================================== -->
+</div>
+<!-- END wrapper -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js" integrity="sha256-Y8l+EeoUOvr8SqEj/gTyjBb8CqhtrA6GU9P4yB+41cE=" crossorigin="anonymous"></script><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- Vendor js -->
+<script src="../javascript/jquer.js"></script>
+<!-- App js-->
+<script src="../javascript/javascript.js"></script>
+</body>
+</html>

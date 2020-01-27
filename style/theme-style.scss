@@ -6112,7 +6112,133 @@ table[data-toggle=table] {
   }
 }
 
+//vertical pill styling start
+.vertical-pill-card {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 30px #00000026;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 50px;
+  .tab-content {
+    padding: 40px 20px;
+    .account-setup-header {
+      .media {
+        img {
+
+          border-radius: 10px;
+          width: 110px;
+          height: 110px;
+        }
+      }
+      h5 {
+        font-family: Roboto;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 0;
+        color: #331A70;
+        opacity: 0.75;
+      }
+      p {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0;
+        color: #637280;
+        opacity: 0.75;
+      }
+    }
+  }
+}
+.vertical-pill {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 30px #00000026;
+  border-radius: 5px 0px 0px 5px;
+  height: 100%;
+  .nav-link {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 30px #00000026;
+    border-radius: 0;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #545871;
+    &:first-child {
+      border-radius: 5px 0 0 0;
+    }
+    &.active {
+      background-color: #5C34BE;
+    }
+  }
+}
+//vertical pill styling end
 //order-overview page styling End
+
+//form styling start
+.custom-select, .form-control, .input-group-text, .invalid-tooltip, .valid-tooltip {
+
+  box-shadow: none;
+}
+
+.form-group {
+  label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #9597A6;
+  }
+  .checkbox {
+    label {
+      font-size: 15px;
+      color: #545871;
+    }
+  }
+  span {
+    color: #D1DBE2;
+    font-size: 20px;
+    i {
+      font-size: 40px;
+    }
+  }
+
+}
+.input-group-prepend {
+  .input-group-text {
+    border-radius: 5px 0 0 5px;
+    background-color: transparent;
+    color: #D1DBE2;
+    font-size: 16px;
+  }
+  .form-control {
+    border-radius: 0 5px 5px 0;
+  }
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .9rem + 2px);
+  padding: .45rem .9rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #D1DBE2;
+  border-radius: 5px;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  color: #545871;
+
+}
+input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #D1DBE2;
+}
+
+//form styling End
 .table-box {
   background-color: #fff;
   border-radius: 5px;
@@ -6217,6 +6343,18 @@ table[data-toggle=table] {
   .video-content {
     text-align: center;
   }
+  .vertical-pill-card {
+    .tab-content {
+      .account-setup-header {
+        h5 {
+          font-size: 26px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -6224,6 +6362,21 @@ table[data-toggle=table] {
     flex-direction: column;
     .user-area {
       max-width: 100%;
+    }
+  }
+  .vertical-pill .nav-link:first-child {
+    border-radius: 5px 5px 0 0;
+  }
+  .vertical-pill-card {
+    .tab-content {
+      .account-setup-header {
+        h5 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
