@@ -4123,6 +4123,16 @@ table[data-toggle=table] {
       letter-spacing: 0;
       color: #545871; }
 
+.info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .info-list li {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0; }
+
 .visit-all {
   font-size: 14px;
   font-weight: 400;

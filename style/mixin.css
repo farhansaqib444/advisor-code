@@ -42,13 +42,13 @@
       .single-chat-tab .chat-header .media .user-dp {
         margin-right: 20px; }
         .single-chat-tab .chat-header .media .user-dp img {
-          width: 60px;
-          height: 60px;
+          width: 90px;
+          height: 90px;
           border-radius: 50%; }
         .single-chat-tab .chat-header .media .user-dp span.user-online {
           width: 12px;
           height: 11px;
-          background: #31B112 0% 0% no-repeat padding-box;
+          background: #331A70 0% 0% no-repeat padding-box;
           border-radius: 50%;
           position: absolute;
           top: 0;
@@ -58,7 +58,7 @@
         font-family: Roboto;
         font-weight: 500;
         letter-spacing: 0;
-        color: #E3025B;
+        color: #161616;
         margin-bottom: 10px; }
   .single-chat-tab .chat-body {
     padding: 30px 30px;
