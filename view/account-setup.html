@@ -8,12 +8,17 @@
   <!-- App favicon -->
 
   <!-- App css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../style/bootstrap.min.css">
   <link rel="stylesheet" href="../style/icons.min.css">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
+
+
 
   <link href="../style/mixin.css" rel="stylesheet" type="text/css" />
   <link href="../style/theme-style.css" rel="stylesheet" type="text/css" />
@@ -152,13 +157,13 @@
               <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-md-0">
                 <div class="nav flex-column nav-pills vertical-pill" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Profile</a>
-                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Orders</a>
-                  <a class="nav-link active" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Payments</a>
+                  <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Orders</a>
+                  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Payments</a>
                 </div>
               </div>
               <div class="col-lg-9 col-md-8 col-sm-12">
                 <div class="tab-content" id="v-pills-tabContent">
-                  <div class="tab-pane" id="v-pills-home" role="tabpanel">
+                  <div class="tab-pane fade" id="v-pills-home" role="tabpanel">
                     <div class="account-setup-header d-flex justify-content-between align-items-center flex-wrap mb-4">
                       <div class="media mb-3 mb-lg-0">
                         <img class=" mr-3" src="../images/user-1.jpg" alt="Generic placeholder image">
@@ -310,7 +315,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel">
+                  <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel">
                     <div class="account-setup-header d-flex justify-content-between align-items-center flex-wrap mb-4">
                       <div class="media mb-3 mb-lg-0">
                         <img class=" mr-3" src="../images/user-1.jpg" alt="Generic placeholder image">
@@ -339,6 +344,14 @@
                           <div class="form-group mb-2">
                             <label>Profile Video</label>
                           </div>
+                          <div class="video-slider">
+                            <div class="owl-carousel">
+                              <div>
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/U9T6YkEDkMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            </div>
+                              <div>
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SWZ_4YBFBhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="col-lg-6 col-md-12">
                           <div class="form-group mb-2">
@@ -360,7 +373,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade show active" id="v-pills-messages" role="tabpanel">
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel">
                     <div class="row">
                       <div class="col-lg-6 col-md-12">
                         <form>
@@ -474,12 +487,43 @@
   <!-- ============================================================== -->
 </div>
 <!-- END wrapper -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js" integrity="sha256-Y8l+EeoUOvr8SqEj/gTyjBb8CqhtrA6GU9P4yB+41cE=" crossorigin="anonymous"></script><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<!-- Vendor js -->
-<script src="../javascript/jquer.js"></script>
-<!-- App js-->
-<script src="../javascript/javascript.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <!-- Vendor js -->
+  <script src="../javascript/jquer.js"></script>
+  <!-- App js-->
+  <script src="../javascript/javascript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      margin: 15,
+      loop: true,
+      items: 1,
+      nav: true,
+      dot: false,
+      navText: [
+        "",
+        "<img src='../images/chevron_right.png'>"
+      ],
+      responsive: {
+        0: {
+          items: 1,
+          stagePadding: 0,
+        },
+        600: {
+          items: 1,
+          stagePadding: 100,
+        },
+        1000: {
+          items: 1,
+          stagePadding: 100,
+        }
+      }
+    });
+  });
+</script>
 </body>
 </html>

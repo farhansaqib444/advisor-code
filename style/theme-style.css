@@ -1,5 +1,6 @@
 /*
 https://xd.adobe.com/view/a97b0f9f-8d51-4731-6dc1-da6158202da6-df4a/
+https://xd.adobe.com/view/f6beaaa1-5fd1-4244-7cc6-c51972be51b2-808f/
 
                             ------------Structure styling file-----------------
 */
@@ -52,6 +53,22 @@ body {
   cursor: pointer; }
   .custom-right-bar i {
     color: #fff; }
+
+.video-slider iframe {
+  border-radius: 10px; }
+.video-slider .owl-nav {
+  display: flex;
+  position: absolute;
+  right: 0;
+  transform: translate(0%, -50%);
+  top: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0 20px; }
+  .video-slider .owl-nav .owl-prev {
+    display: none; }
+.video-slider .owl-dots {
+  display: none; }
 
 .metismenu {
   padding: 0; }

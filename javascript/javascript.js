@@ -150,3 +150,8 @@
     "use strict";
     window.jQuery.App.init()
   }(), Waves.init();
+
+// owl-carousel
+
+
+// owl-carousel end
