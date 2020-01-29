@@ -8,15 +8,16 @@
   <!-- App favicon -->
 
   <!-- App css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
   <link rel="stylesheet" href="../style/bootstrap.min.css">
-  <link rel="stylesheet" href="../style/icons.min.css">
 
+  <link rel="stylesheet" href="../style/icons.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="../style/mixin.css" rel="stylesheet" type="text/css" />
   <link href="../style/theme-style.css" rel="stylesheet" type="text/css" />
-
 </head>
 <body>
 <!-- Begin page -->
@@ -80,6 +81,7 @@
       <!--- Sidemenu -->
       <div id="sidebar-menu" class="d-flex align-content-between flex-wrap h-100">
         <ul class="metismenu" id="side-menu">
+          <!--          logo-->
           <li>
             <div class="logo-box">
               <a href="#" class="logo text-center">
@@ -92,32 +94,55 @@
               </a>
             </div>
           </li>
+          <!--          logo-->
           <li>
-            <a href="#">
+            <a href="home%202.html">
               <i class="fas fa-portrait"></i>
-
               <span> Overview  <span class="badge badge-success ml-2">4</span></span>
             </a>
-            <ul class="nav-second-level" aria-expanded="false">
-              <li>
-                <a href="#">Overview 1</a>
-              </li>
-            </ul>
           </li>
           <li>
-            <a href="#">
+            <a target="_blank"  aria-expanded="false">
               <i class="fas fa-calendar-day"></i>
               <span> Orders </span>
               <span class="menu-arrow"></span>
             </a>
-            <ul class="nav-second-level" aria-expanded="false">
+            <ul class="nav-second-level">
               <li>
-                <a href="#">Orders 1</a>
+                <a href="../view/order%20-%20screen%202.html">Orders 1</a>
               </li>
               <li>
-                <a href="#">Orders 2</a>
+                <a href="Order%202%20-%20screen%203.html">Orders 2</a>
+              </li>
+              <li>
+                <a href="order%20-%20screen%204.html">Orders 2</a>
               </li>
             </ul>
+          </li>
+          <li>
+            <a href="payment-1.html">
+              <i class="far fa-credit-card"></i>
+              <span> Payments </span>
+              <span class="menu-arrow"></span>
+            </a>
+          </li>
+          <li>
+            <a href="profile-view.html">
+              <i class="material-icons">
+                build
+              </i>
+              <span> Setup </span>
+              <span class="menu-arrow"></span>
+            </a>
+          </li>
+          <li>
+            <a href="chat-page.html">
+              <i class="material-icons">
+                chat
+              </i>
+              <span> Chat </span>
+              <span class="menu-arrow"></span>
+            </a>
           </li>
         </ul>
         <ul class="metismenu text-center w-100">
@@ -129,6 +154,7 @@
         </ul>
       </div>
       <!-- End Sidebar -->
+
     </div>
     <!-- Sidebar -left -->
   </div>
