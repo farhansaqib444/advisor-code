@@ -21,7 +21,7 @@ $sm-btn-weight: 400;
 .btn-secondary {
   @include btn-bg(#5C34BE);
 }
-
+/***** CSS single-chat-tab *****/
 .single-chat-tab {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 30px #00000026;
@@ -102,6 +102,21 @@ $sm-btn-weight: 400;
         .msg-block {
           background-color: #331A70;
           text-align: left;
+          position: relative;
+          :after {
+            left: 98%;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            margin-left: -5px;
+            border: 11px solid #331A70;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            bottom: -11px;
+            transform: rotate(-45deg);
+          }
         }
       }
       &.receiver {
@@ -111,6 +126,20 @@ $sm-btn-weight: 400;
         .msg-block {
           background-color: #008EF4 ;
           text-align: left;
+          position: relative;
+          :before {
+            right: 99%;
+            top: 0;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            margin-left: -1px;
+            border: 8px solid #008EF4;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+          }
         }
       }
       label {
@@ -150,5 +179,38 @@ $sm-btn-weight: 400;
     }
   }
 }
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+  margin-right: 1px;
+  font-size: 1.25em;
+  font-family: "Material Icons";
+  display: inline-block;
+  content: "\e838";
+}
+
+.rating > .half:before {
+  content: "\e838";
+  position: absolute;
+}
+.rating > label {
+  color: #ddd;
+  float: right;
+  font-size: 16px;
+}
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
 
 

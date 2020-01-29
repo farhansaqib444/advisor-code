@@ -10,6 +10,17 @@ html {
   position: relative;
   min-height: 100%;
 }
+.divider hr {
+  background: #363636 0% 0% no-repeat padding-box;
+  opacity: 0.2;
+  border: 0;
+  border-top: 1px solid rgba(54, 54, 54, 0.2);
+}
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-top: 1px solid rgba(54, 54, 54, 0.2);
+}
 ul {
   list-style: none;
   margin: 0;
@@ -850,7 +861,7 @@ body.enlarged {
     color: #fff;
     text-align: center;
     border-radius: 50%;
-    margin-top: -4px;
+    margin-top: -11px;
 
     &:hover {
       background-color: #475364;
@@ -6155,32 +6166,33 @@ table[data-toggle=table] {
   margin-bottom: 50px;
   .tab-content {
     padding: 40px 20px;
-    .account-setup-header {
-      .media {
-        img {
+  }
+}
 
-          border-radius: 10px;
-          width: 110px;
-          height: 110px;
-        }
-      }
-      h5 {
-        font-family: Roboto;
-        font-size: 40px;
-        font-weight: 700;
-        letter-spacing: 0;
-        color: #331A70;
-        opacity: 0.75;
-      }
-      p {
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 500;
-        letter-spacing: 0;
-        color: #637280;
-        opacity: 0.75;
-      }
+.account-setup-header {
+  .media {
+    img {
+
+      border-radius: 10px;
+      width: 110px;
+      height: 110px;
     }
+  }
+  h5 {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #331A70;
+    opacity: 0.75;
+  }
+  p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #637280;
+    opacity: 0.75;
   }
 }
 .vertical-pill {
@@ -6208,6 +6220,47 @@ table[data-toggle=table] {
 //vertical pill styling end
 //order-overview page styling End
 
+//Profile view page css start
+.user-overview {
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+    color: #111111;
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #363636;
+    margin-bottom: 10px;
+  }
+}
+.categories-list li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #363636;
+}
+.social-list {
+  a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 15px;
+    margin-right: 10px;
+    i {
+      color: #fff;
+      vertical-align: middle;
+    }
+  }
+}
+//Profile view page css End
 //form styling start
 .custom-select, .form-control, .input-group-text, .invalid-tooltip, .valid-tooltip {
 
@@ -6272,7 +6325,60 @@ input::placeholder {
   font-weight: 400;
   color: #D1DBE2;
 }
+//review-section styling start
+.review-section {
+  .review-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.15px;
+    color: #363636;
+    margin-bottom: 0;
+  }
+  .review-states {
+    text-align: center;
+    display: inline-block;
+    margin: 0 15px;
+    img {
+      display: block;
+    }
+    label {
 
+    }
+  }
+  .review-card {
+    padding: 10px 0;
+    h5 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -0.11px;
+      color: #0074CD;
+      margin-bottom: 0;
+      span {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: -0.09px;
+        color: #D8D8D8;
+      }
+    }
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0;
+      color: #363636;
+    }
+    hr {
+      border-top: 1px solid rgba(54, 54, 54, 0.2);
+      width: 100%;
+      max-width: 270px;
+      margin: 5px auto;
+    }
+  }
+}
+// review-section styling End
 //form styling End
 .table-box {
   background-color: #fff;

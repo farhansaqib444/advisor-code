@@ -14,6 +14,7 @@
   .btn-secondary:active {
     background-color: #492996; }
 
+/***** CSS single-chat-tab *****/
 .single-chat-tab {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 30px #00000026;
@@ -77,12 +78,39 @@
         align-self: flex-end; }
         .single-chat-tab .chat-body .message-content.sender .msg-block {
           background-color: #331A70;
-          text-align: left; }
+          text-align: left;
+          position: relative; }
+          .single-chat-tab .chat-body .message-content.sender .msg-block :after {
+            left: 98%;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            margin-left: -5px;
+            border: 11px solid #331A70;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            bottom: -11px;
+            transform: rotate(-45deg); }
       .single-chat-tab .chat-body .message-content.receiver label {
         text-align: left; }
       .single-chat-tab .chat-body .message-content.receiver .msg-block {
         background-color: #008EF4;
-        text-align: left; }
+        text-align: left;
+        position: relative; }
+        .single-chat-tab .chat-body .message-content.receiver .msg-block :before {
+          right: 99%;
+          top: 0;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          margin-left: -1px;
+          border: 8px solid #008EF4;
+          border-bottom-color: transparent;
+          border-left-color: transparent; }
       .single-chat-tab .chat-body .message-content label {
         font-size: 14px;
         font-family: 'Fira Sans', sans-serif;
@@ -110,5 +138,41 @@
       border-radius: 5px; }
       .single-chat-tab .chat-footer .btn i {
         font-size: 30px; }
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating {
+  border: none;
+  float: left; }
+
+.rating > input {
+  display: none; }
+
+.rating > label:before {
+  margin-right: 1px;
+  font-size: 1.25em;
+  font-family: "Material Icons";
+  display: inline-block;
+  content: "\e838"; }
+
+.rating > .half:before {
+  content: "\e838";
+  position: absolute; }
+
+.rating > label {
+  color: #ddd;
+  float: right;
+  font-size: 16px; }
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #FFD700; }
+
+/* hover previous stars in list */
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #FFED85; }
 
 /*# sourceMappingURL=mixin.css.map */
